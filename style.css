@@ -30,6 +30,50 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+html,
+body {
+  margin: 0; /* Removes default browser margin around the page */
+  padding: 0; /* Removes default padding inside the page */
+  overflow-x: hidden; /* Prevents horizontal scrolling (hides content that overflows to the right) */
+  overscroll-behavior: none; /* Prevents scroll chaining or "bounce" effect on touch devices */
+  background: linear-gradient(
+    to bottom,
+    #fff7dc,
+    #ffecc7
+  ); /* Applies a vertical gradient background from light yellow to a slightly darker yellow */
+  background-attachment: fixed; /* Keeps the background fixed in place while the user scrolls */
+}
+
+body {
+  background: linear-gradient(135deg, #fff4d9, #ffeab6, #fff4d9);
+  background-size: 400% 400%;
+  animation: glow 10s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background-image: url("/Bengali_BackgroundImages.jpg");
+  /* background-image: url("Theme.jpeg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-attachment: scroll;
+}
+
 /* ========== Main container styling ========== */
 .container {
   max-width: 500px; /* Max width constraint */
