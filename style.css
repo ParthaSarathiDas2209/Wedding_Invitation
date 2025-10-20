@@ -1,0 +1,300 @@
+/* ========== Root CSS Variables for consistent colors ========== */
+:root {
+  --maroon: #7b1113; /* Deep maroon color used for text and borders */
+  --gold: #d4af37; /* Gold accent color for highlights and borders */
+  --cream: #fffaf0; /* Creamy off-white for backgrounds and text */
+  --floral-bg: #fff5e1; /* Light floral cream background for containers */
+}
+
+/* ========== Reset default margin, padding and set box sizing ========== */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* ========== Body styling and layout setup ========== */
+body {
+  font-family: "Roboto", sans-serif; /* Clean, modern font */
+  background: linear-gradient(
+    to bottom,
+    #fff7dc,
+    #ffecc7
+  ); /* Soft vertical gradient background */
+  background-attachment: fixed; /* Background fixed during scroll */
+  color: var(--maroon); /* Default text color */
+  padding: 25px; /* Outer padding around page content */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ========== Main container styling ========== */
+.container {
+  max-width: 500px; /* Max width constraint */
+  width: 100%; /* Full width up to max */
+  background: var(--floral-bg); /* Light cream background */
+  border: 4px solid var(--gold); /* Thick gold border */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* Soft gold glow shadow */
+  padding: 25px; /* Inner padding */
+  text-align: center; /* Center text */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* ========== Image inside container ========== */
+.ganesha-img {
+  width: 90px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below image */
+}
+
+/* ========== Header styles ========== */
+.header h1 {
+  font-family: "Great Vibes", cursive; /* Elegant script font */
+  font-size: 2.8em; /* Large heading size */
+  color: var(--maroon); /* Maroon text color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* ========== Introductory paragraph styling ========== */
+.intro-text {
+  font-size: 1.1em; /* Slightly larger text */
+  color: #5b2c2c; /* Dark brown for contrast */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* ========== Names section ========== */
+.names h2 {
+  font-family: "Great Vibes", cursive; /* Script font for names */
+  font-size: 2.2em; /* Large size */
+  color: var(--maroon); /* Maroon color */
+}
+
+/* ========== Divider styling (like “&” between names) ========== */
+.divider {
+  margin: 15px 0; /* Vertical spacing */
+  font-size: 1.4em; /* Medium size text */
+  color: var(--gold); /* Gold color */
+}
+
+/* ========== General section styling ========== */
+.section {
+  margin: 25px 0; /* Vertical spacing */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Semi-transparent white background */
+  padding: 15px; /* Inner padding */
+  border-radius: 12px; /* Rounded corners */
+  border: 1px solid var(--gold); /* Thin gold border */
+}
+
+/* ========== Secondary headings styling ========== */
+h2 {
+  font-family: "Great Vibes", cursive; /* Script font */
+  font-size: 1.8em; /* Size for sub-headings */
+  color: var(--maroon); /* Maroon text */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+/* ========== Paragraph and list items styling ========== */
+p,
+li {
+  font-size: 1em; /* Normal font size */
+  line-height: 1.6; /* Comfortable line height */
+}
+
+/* ========== Lists styling ========== */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+/* ========== Button styling ========== */
+.btn {
+  display: inline-block; /* Behave like button but inline */
+  background-color: var(--maroon); /* Maroon background */
+  color: var(--cream); /* Cream text */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 25px; /* Rounded pill shape */
+  text-decoration: none; /* Remove underline */
+  margin-top: 15px; /* Space above button */
+  transition: background 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+/* ========== Button hover effect styling ========== */
+.btn:hover {
+  background-color: var(--gold); /* Gold background on hover */
+  color: var(--maroon); /* Maroon text on hover */
+  font-weight: bold; /* Bold text on hover */
+}
+
+/* ========== Footer styling ========== */
+.footer {
+  font-size: 0.9em; /* Smaller font size */
+  margin-top: 30px; /* Space above footer */
+  color: #6d3d0b; /* Dark brown text */
+  line-height: 1.5; /* Comfortable line height */
+}
+
+/* ========== Responsive Google Map container styling ========== */
+.map-wrapper {
+  position: relative; /* Relative for absolute iframe */
+  width: 100%; /* Full width container */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0; /* Height controlled by padding */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 12px; /* Rounded corners */
+  border: 3px solid var(--gold); /* Gold border */
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3); /* Subtle shadow */
+  margin-top: 20px; /* Space above map */
+}
+
+/* ========== Iframe styling inside map-wrapper ========== */
+.map-wrapper iframe {
+  position: absolute; /* Absolute to fill container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* ========== Responsive breakpoints for various devices ========== */
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 15px; /* Less padding */
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .container {
+    padding: 20px 15px; /* Smaller padding */
+  }
+
+  .ganesha-img {
+    width: 70px; /* Smaller image */
+  }
+
+  .header h1 {
+    font-size: 2em; /* Smaller heading */
+  }
+
+  .names h2,
+  h2 {
+    font-size: 1.6em; /* Smaller subheadings */
+  }
+
+  .divider {
+    font-size: 1.2em; /* Smaller divider text */
+  }
+
+  p,
+  li {
+    font-size: 0.95em; /* Slightly smaller font */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons */
+    font-size: 1em; /* Normal font size */
+    padding: 12px 0; /* Larger vertical padding */
+  }
+
+  .map-wrapper {
+    padding-bottom: 70%; /* Taller map */
+  }
+}
+
+/* Tablets (min-width: 481px and max-width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 20px; /* Moderate padding */
+  }
+
+  .container {
+    padding: 25px 20px; /* Moderate container padding */
+  }
+
+  .header h1 {
+    font-size: 2.5em; /* Medium heading size */
+  }
+
+  .names h2,
+  h2 {
+    font-size: 1.8em; /* Medium subheadings */
+  }
+
+  .map-wrapper {
+    padding-bottom: 60%; /* Medium height map */
+  }
+}
+
+/* Small laptops (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 550px; /* Slightly wider container */
+  }
+}
+
+/* Large desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 600px; /* Maximum container width */
+  }
+}
+
+/* ========== Fade-in animation for page load and scroll ========== */
+
+/* Fade-in initial state */
+.fade-in {
+  opacity: 0; /* Start transparent */
+  transform: translateY(20px); /* Slight downward offset */
+  animation: fadeInUp 1s ease-out forwards; /* Animate fade-in and slide-up */
+  animation-delay: 0.3s; /* Slight delay */
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+  }
+}
+
+/* Fade-in on scroll base style */
+.fade-in-on-scroll {
+  opacity: 0; /* Start transparent */
+  transform: translateY(20px); /* Slight downward offset */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+/* When element becomes visible on scroll */
+.fade-in-on-scroll.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Original position */
+}
+/* Styling for the blessing quote */
+.blessing blockquote {
+  font-style: italic;
+  font-family: "Great Vibes", cursive; /* Elegant cursive font */
+  color: #8b5e3c; /* Warm brown/golden color */
+  border-left: 4px solid #d4af37; /* Gold left border */
+  padding-left: 20px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.blessing cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #6b4c3b;
+}
