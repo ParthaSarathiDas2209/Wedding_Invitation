@@ -71,7 +71,7 @@ body {
 
 /* Background image styling */
 body {
-  background-image: url("/Bengali_BackgroundImages.jpg"); /* Background photo path */
+  background-image: url("Bengali_BackgroundImages.jpg"); /* Background photo path */
   /* background-image: url("Theme.jpeg"); */ /* Alternate background option */
   background-size: cover; /* Cover entire screen */
   background-repeat: no-repeat; /* Prevent tiling */
