@@ -10,300 +10,290 @@
 * {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  box-sizing: border-box; /* Include padding and border in total width/height */
 }
 
 /* ========== Body styling and layout setup ========== */
 body {
-  font-family: "Roboto", sans-serif; /* Clean, modern font */
+  font-family: "Roboto", sans-serif; /* Clean modern font */
   background: linear-gradient(
     to bottom,
     #fff7dc,
     #ffecc7
-  ); /* Soft vertical gradient background */
-  background-attachment: fixed; /* Background fixed during scroll */
+  ); /* Soft gradient background */
+  background-attachment: fixed; /* Keeps background fixed while scrolling */
   color: var(--maroon); /* Default text color */
-  padding: 25px; /* Outer padding around page content */
-  display: flex; /* Flexbox for centering content */
+  padding: 25px; /* Outer padding */
+  display: flex; /* Flex layout for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html,
 body {
-  margin: 0; /* Removes default browser margin around the page */
-  padding: 0; /* Removes default padding inside the page */
-  overflow-x: hidden; /* Prevents horizontal scrolling (hides content that overflows to the right) */
-  overscroll-behavior: none; /* Prevents scroll chaining or "bounce" effect on touch devices */
+  margin: 0; /* Remove browser default margins */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overscroll-behavior: none; /* Prevent bounce/chain scroll on touch devices */
   background: linear-gradient(
     to bottom,
     #fff7dc,
     #ffecc7
-  ); /* Applies a vertical gradient background from light yellow to a slightly darker yellow */
-  background-attachment: fixed; /* Keeps the background fixed in place while the user scrolls */
+  ); /* Vertical gradient */
+  background-attachment: fixed; /* Keep background fixed */
 }
 
+/* Animated glowing gradient background */
 body {
-  background: linear-gradient(135deg, #fff4d9, #ffeab6, #fff4d9);
-  background-size: 400% 400%;
-  animation: glow 10s ease infinite;
+  background: linear-gradient(
+    135deg,
+    #fff4d9,
+    #ffeab6,
+    #fff4d9
+  ); /* Gradient animation colors */
+  background-size: 400% 400%; /* Expand background for smooth animation */
+  animation: glow 10s ease infinite; /* Continuous glowing animation */
 }
 
+/* Keyframes for background animation */
 @keyframes glow {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 50%; /* Start position */
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 50%; /* Midway position */
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 50%; /* End position resets to start */
   }
 }
 
+/* Background image styling */
 body {
-  background-image: url("/Bengali_BackgroundImages.jpg");
-  /* background-image: url("Theme.jpeg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("/Bengali_BackgroundImages.jpg"); /* Background photo path */
+  /* background-image: url("Theme.jpeg"); */ /* Alternate background option */
+  background-size: cover; /* Cover entire screen */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center image */
 }
 
+/* Scrollable background (not fixed) */
 body {
-  background-attachment: scroll;
+  background-attachment: fixed; /* Moves with page scroll */
 }
 
 /* ========== Main container styling ========== */
 .container {
-  max-width: 500px; /* Max width constraint */
-  width: 100%; /* Full width up to max */
-  background: var(--floral-bg); /* Light cream background */
-  border: 4px solid var(--gold); /* Thick gold border */
+  max-width: 500px; /* Limit content width */
+  width: 100%; /* Allow responsive width */
+  background: var(--floral-bg); /* Cream background */
+  border: 4px solid var(--gold); /* Gold border */
   border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* Soft gold glow shadow */
-  padding: 25px; /* Inner padding */
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); /* Subtle gold glow shadow */
+  padding: 25px; /* Inner spacing */
   text-align: center; /* Center text */
-  overflow: hidden; /* Hide overflowing content */
+  overflow: hidden; /* Hide overflow */
 }
 
-/* ========== Image inside container ========== */
+/* ========== Ganesha image ========== */
 .ganesha-img {
-  width: 90px; /* Fixed image width */
+  width: 90px; /* Image width */
   height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space below image */
+  margin-bottom: 10px; /* Space below */
 }
 
-/* ========== Header styles ========== */
+/* ========== Header ========== */
 .header h1 {
   font-family: "Great Vibes", cursive; /* Elegant script font */
-  font-size: 2.8em; /* Large heading size */
-  color: var(--maroon); /* Maroon text color */
-  margin-bottom: 10px; /* Space below heading */
+  font-size: 2.8em; /* Large heading */
+  color: var(--maroon); /* Maroon color */
+  margin-bottom: 10px; /* Space below */
 }
 
-/* ========== Introductory paragraph styling ========== */
+/* ========== Introductory paragraph ========== */
 .intro-text {
-  font-size: 1.1em; /* Slightly larger text */
-  color: #5b2c2c; /* Dark brown for contrast */
-  margin-bottom: 20px; /* Space below paragraph */
+  font-size: 1.1em; /* Slightly larger font */
+  color: #5b2c2c; /* Dark brown text */
+  margin-bottom: 20px; /* Space below */
 }
 
 /* ========== Names section ========== */
 .names h2 {
-  font-family: "Great Vibes", cursive; /* Script font for names */
-  font-size: 2.2em; /* Large size */
+  font-family: "Great Vibes", cursive; /* Script font */
+  font-size: 2.2em; /* Large name size */
   color: var(--maroon); /* Maroon color */
 }
 
-/* ========== Divider styling (like “&” between names) ========== */
+/* ========== Divider (& symbol) ========== */
 .divider {
   margin: 15px 0; /* Vertical spacing */
-  font-size: 1.4em; /* Medium size text */
+  font-size: 1.4em; /* Size for divider */
   color: var(--gold); /* Gold color */
 }
 
-/* ========== General section styling ========== */
+/* ========== Section containers ========== */
 .section {
   margin: 25px 0; /* Vertical spacing */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.6
-  ); /* Semi-transparent white background */
-  padding: 15px; /* Inner padding */
+  background-color: rgba(255, 255, 255, 0.6); /* Light translucent background */
+  padding: 15px; /* Inner spacing */
   border-radius: 12px; /* Rounded corners */
   border: 1px solid var(--gold); /* Thin gold border */
 }
 
-/* ========== Secondary headings styling ========== */
+/* ========== Subheadings ========== */
 h2 {
   font-family: "Great Vibes", cursive; /* Script font */
-  font-size: 1.8em; /* Size for sub-headings */
+  font-size: 1.8em; /* Size for headings */
   color: var(--maroon); /* Maroon text */
-  margin-bottom: 10px; /* Space below heading */
+  margin-bottom: 10px; /* Space below */
 }
 
-/* ========== Paragraph and list items styling ========== */
+/* ========== Paragraphs and list items ========== */
 p,
 li {
   font-size: 1em; /* Normal font size */
-  line-height: 1.6; /* Comfortable line height */
+  line-height: 1.6; /* Comfortable line spacing */
 }
 
-/* ========== Lists styling ========== */
+/* ========== Unordered list ========== */
 ul {
-  list-style-type: none; /* Remove default bullets */
-  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
 }
 
 /* ========== Button styling ========== */
 .btn {
-  display: inline-block; /* Behave like button but inline */
+  display: inline-block; /* Inline button style */
   background-color: var(--maroon); /* Maroon background */
   color: var(--cream); /* Cream text */
-  padding: 10px 20px; /* Button padding */
+  padding: 10px 20px; /* Spacing */
   border-radius: 25px; /* Rounded pill shape */
-  text-decoration: none; /* Remove underline */
-  margin-top: 15px; /* Space above button */
-  transition: background 0.3s, color 0.3s; /* Smooth hover transition */
+  text-decoration: none; /* No underline */
+  margin-top: 15px; /* Space above */
+  transition: background 0.3s, color 0.3s; /* Smooth hover transitions */
 }
 
-/* ========== Button hover effect styling ========== */
+/* ========== Button hover effect ========== */
 .btn:hover {
-  background-color: var(--gold); /* Gold background on hover */
-  color: var(--maroon); /* Maroon text on hover */
-  font-weight: bold; /* Bold text on hover */
+  background-color: var(--gold); /* Change to gold on hover */
+  color: var(--maroon); /* Maroon text */
+  font-weight: bold; /* Bold text */
 }
 
-/* ========== Footer styling ========== */
+/* ========== Footer text ========== */
 .footer {
-  font-size: 0.9em; /* Smaller font size */
-  margin-top: 30px; /* Space above footer */
-  color: #6d3d0b; /* Dark brown text */
-  line-height: 1.5; /* Comfortable line height */
+  font-size: 0.9em; /* Smaller font */
+  margin-top: 30px; /* Space above */
+  color: #6d3d0b; /* Brownish text */
+  line-height: 1.5; /* Comfortable spacing */
 }
 
-/* ========== Responsive Google Map container styling ========== */
+/* ========== Responsive Google Map wrapper ========== */
 .map-wrapper {
-  position: relative; /* Relative for absolute iframe */
-  width: 100%; /* Full width container */
+  position: relative; /* For absolutely positioned iframe */
+  width: 100%; /* Full width */
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0; /* Height controlled by padding */
+  height: 0; /* Height via padding */
   overflow: hidden; /* Hide overflow */
   border-radius: 12px; /* Rounded corners */
   border: 3px solid var(--gold); /* Gold border */
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3); /* Subtle shadow */
-  margin-top: 20px; /* Space above map */
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3); /* Subtle gold glow */
+  margin-top: 20px; /* Space above */
 }
 
-/* ========== Iframe styling inside map-wrapper ========== */
+/* ========== Google Map iframe ========== */
 .map-wrapper iframe {
-  position: absolute; /* Absolute to fill container */
+  position: absolute; /* Fill parent */
   top: 0;
   left: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  border: none; /* Remove border */
-  border-radius: 10px; /* Rounded corners */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded edges */
 }
 
-/* ========== Responsive breakpoints for various devices ========== */
+/* ========== Responsive Design Breakpoints ========== */
 
-/* Mobile phones (max-width: 480px) */
+/* Phones */
 @media (max-width: 480px) {
   body {
-    padding: 15px; /* Less padding */
-    flex-direction: column; /* Stack content vertically */
+    padding: 15px; /* Reduce outer padding */
+    flex-direction: column; /* Stack elements */
   }
-
   .container {
-    padding: 20px 15px; /* Smaller padding */
+    padding: 20px 15px; /* Smaller inner padding */
   }
-
   .ganesha-img {
     width: 70px; /* Smaller image */
   }
-
   .header h1 {
-    font-size: 2em; /* Smaller heading */
+    font-size: 2em; /* Smaller title */
   }
-
   .names h2,
   h2 {
-    font-size: 1.6em; /* Smaller subheadings */
+    font-size: 1.6em; /* Smaller headings */
   }
-
   .divider {
-    font-size: 1.2em; /* Smaller divider text */
+    font-size: 1.2em; /* Smaller divider */
   }
-
   p,
   li {
-    font-size: 0.95em; /* Slightly smaller font */
+    font-size: 0.95em; /* Slightly smaller text */
   }
-
   .btn {
     width: 100%; /* Full width buttons */
-    font-size: 1em; /* Normal font size */
-    padding: 12px 0; /* Larger vertical padding */
+    font-size: 1em; /* Normal size */
+    padding: 12px 0; /* Larger top-bottom padding */
   }
-
   .map-wrapper {
-    padding-bottom: 70%; /* Taller map */
+    padding-bottom: 70%; /* Taller map for narrow screens */
   }
 }
 
-/* Tablets (min-width: 481px and max-width: 768px) */
+/* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   body {
     padding: 20px; /* Moderate padding */
   }
-
   .container {
-    padding: 25px 20px; /* Moderate container padding */
+    padding: 25px 20px; /* Adjusted padding */
   }
-
   .header h1 {
-    font-size: 2.5em; /* Medium heading size */
+    font-size: 2.5em; /* Medium title */
   }
-
   .names h2,
   h2 {
-    font-size: 1.8em; /* Medium subheadings */
+    font-size: 1.8em; /* Medium headings */
   }
-
   .map-wrapper {
-    padding-bottom: 60%; /* Medium height map */
+    padding-bottom: 60%; /* Slightly shorter map */
   }
 }
 
-/* Small laptops (min-width: 769px and max-width: 1024px) */
+/* Small laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
-    max-width: 550px; /* Slightly wider container */
+    max-width: 550px; /* Slightly wider */
   }
 }
 
-/* Large desktops (min-width: 1025px) */
+/* Large desktops */
 @media (min-width: 1025px) {
   .container {
-    max-width: 600px; /* Maximum container width */
+    max-width: 600px; /* Widest container */
   }
 }
 
-/* ========== Fade-in animation for page load and scroll ========== */
-
-/* Fade-in initial state */
+/* ========== Fade-in Animation on Load ========== */
 .fade-in {
-  opacity: 0; /* Start transparent */
+  opacity: 0; /* Hidden initially */
   transform: translateY(20px); /* Slight downward offset */
-  animation: fadeInUp 1s ease-out forwards; /* Animate fade-in and slide-up */
-  animation-delay: 0.3s; /* Slight delay */
+  animation: fadeInUp 1s ease-out forwards; /* Fade + slide animation */
+  animation-delay: 0.3s; /* Start delay */
 }
 
-/* Keyframes for fadeInUp animation */
+/* Keyframes for fade-in animation */
 @keyframes fadeInUp {
   to {
     opacity: 1; /* Fully visible */
@@ -311,34 +301,35 @@ ul {
   }
 }
 
-/* Fade-in on scroll base style */
+/* Scroll-triggered fade-in base */
 .fade-in-on-scroll {
-  opacity: 0; /* Start transparent */
-  transform: translateY(20px); /* Slight downward offset */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+  opacity: 0; /* Hidden */
+  transform: translateY(20px); /* Offset */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transitions */
 }
 
-/* When element becomes visible on scroll */
+/* Element becomes visible on scroll */
 .fade-in-on-scroll.visible {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Original position */
+  opacity: 1; /* Visible */
+  transform: translateY(0); /* Slide up */
 }
-/* Styling for the blessing quote */
+
+/* ========== Blessing quote section ========== */
 .blessing blockquote {
-  font-style: italic;
-  font-family: "Great Vibes", cursive; /* Elegant cursive font */
-  color: #8b5e3c; /* Warm brown/golden color */
+  font-style: italic; /* Italicized text */
+  font-family: "Great Vibes", cursive; /* Elegant font */
+  color: #8b5e3c; /* Warm brown tone */
   border-left: 4px solid #d4af37; /* Gold left border */
-  padding-left: 20px;
-  margin: 20px 0;
-  font-size: 1.2em;
-  text-align: center;
+  padding-left: 20px; /* Indent text */
+  margin: 20px 0; /* Vertical spacing */
+  font-size: 1.2em; /* Slightly larger font */
+  text-align: center; /* Center text */
 }
 
 .blessing cite {
-  display: block;
-  margin-top: 10px;
-  font-style: normal;
-  font-weight: bold;
-  color: #6b4c3b;
+  display: block; /* Display on new line */
+  margin-top: 10px; /* Space above */
+  font-style: normal; /* Normal font */
+  font-weight: bold; /* Bold name */
+  color: #6b4c3b; /* Darker brown */
 }
